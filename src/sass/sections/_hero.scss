@@ -28,6 +28,29 @@
     padding: 0rem $default-font-size;
   }
 
+  .menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+
+    @include respond(phone) {
+      justify-content: center;
+    }
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+
+    @include respond(phone) {
+      align-items: center;
+    }
+  }
+
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
