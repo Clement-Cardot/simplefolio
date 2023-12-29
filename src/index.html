@@ -15,35 +15,44 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <link rel="shortcut icon" href="assets/icon.ico" />
 
     <title>Clément CARDOT | Software Engineer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="Clement, Cardot, java, python, C, C++, C#, arduino, portfolio, projects, javascript, Angular, Spring" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
     <meta name="description" content="Clément CARDOT | Software Engineer" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      media="all"
     />
     <link rel="stylesheet" href="styles.scss" />
     <script
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+      media="all"
     ></script>
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top"></div>
+
 
     <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
+    <section id="hero" class="jumbotron d-flex flex-column align-items-end pt-5">
+      <div class="menu-container">
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+              >About me</a
+            >
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#projects"
+              >My projects</a
+          >
+        
+        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#contact"
+              >Contact me</a
+          >
+      </div>
+      <div class="container hero-container">
         <h1 class="hero-title load-hidden">
           Hi, my name is <span class="text-color-main">Clément CARDOT</span>
           <br />
@@ -65,21 +74,24 @@
         <div class="row about-wrapper">
           <div class="col-md-4 col-sm-10">
             <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-                alt="Profile Image"
-              />
+              <picture>
+                <source type="image/avif" srcset="assets/profile.avif">
+                <img
+                  alt="Profile Image"
+                  class="img-fluid rounded shadow-lg"
+                  height="auto"
+                  width="300px"
+                  src="assets/profile.jpg"
+                  alt="Profile Image"
+                />
+              </picture>
             </div>
           </div>
           <div class="col-md-8 col-sm-14">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
                 I'm a 22 years old software engineer student at <a href="https://eseo.fr">ESEO</a> in Angers, France. 
-                Interrested in Software, AI and Backend development, I'm currently looking for a 6-month internship between february and August 2024.
+                Interrested in Software, AI and Backend development, I'm currently looking for a 6-month internship between February and August 2024.
               </p>
               <p class="about-wrapper__info-text">
                 I love going on adventures to discover new landscapes through roadtrips or treks. 
@@ -108,6 +120,171 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Projects</h2>
 
+          <!-- Xrl Online -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Xrl Online (In Progress)</h3>
+                <div>
+                  <p class="mb-4">
+                    My end-of-studies project. With 3 other students, we had to develop a web application for our client : Thales Hong Kong.
+                    This application allows the user to follow the progress of the readiness of his projects. It use the KTH Readiness Level framework.
+                  </p>
+                </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Spring</span>
+                  <span class="badge bg-custom">Angular</span>
+                  <span class="badge bg-custom">MongoDB</span>
+                  <span class="badge bg-custom">Docker Compose</span>
+                </h2>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#"
+                >
+                  Source Code (COMING SOON)
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <picture>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="https://placehold.co/800x400?text=COMING+SOON"
+                      />
+                    </picture>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- TAF -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Website Angular/Spring</h3>
+                <div>
+                  <p class="mb-4">
+                    My first Web Application project. With 7 other students, we had to develop a web application for our school to help future students to organize their projects.<br>
+                    This work was very interesting because we had to work with a lot of different technologies like Angular, Spring, Hibernate, MySQL, Docker, SonarQube, etc.<br>
+                    But it was also very challenging because we had to work in a team of 8 people and this enabled us to learn how to use the agile scrum method.<br>
+                  </p>
+                </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Angular</span>
+                  <span class="badge bg-custom">Spring</span>
+                  <span class="badge bg-custom">MariaDB</span>
+                  <span class="badge bg-custom">Typescript</span>
+                </h2>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="assets/taf/taf.pdf"
+                >
+                  See PDF Presentation
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Clement-Cardot/caerdydd"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <picture>
+                      <source type="image/avif" srcset="assets/taf/1.avif">
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/taf/1.png"
+                      />
+                    </picture>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- TO-DO App -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">TO-DO App</h3>
+                <div>
+                  <p class="mb-4">
+                    A small project to learn how to use React & Bootstrap. This is a simple TO-DO app that allows you to add, delete and edit to-do lists.
+                    You can also add for each task : a title, a description, a deadline, a priority and a tag.
+                  </p>
+                </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">React</span>
+                  <span class="badge bg-custom">Vite</span>
+                  <span class="badge bg-custom">Bootstrap</span>
+                </h2>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://donify.netlify.app"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Clement-Cardot/react-todo-app"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <picture>
+                      <source type="image/avif" srcset="assets/todoapp/todoapp.avif">
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/todoapp/todoapp.png"
+                      />
+                    </picture>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
           <!-- Kerbal Controller -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
@@ -121,6 +298,12 @@
                     Hugo has made a video about his project, you can watch it on Youtube !
                   </p>
                 </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Arduino</span>
+                  <span class="badge bg-custom">C/C++</span>
+                  <span class="badge bg-custom">Python</span>
+                  <span class="badge bg-custom">Electronics</span>
+                </h2>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -140,11 +323,14 @@
                   data-tilt-max-glare="0.5"
                   class="thumbnail rounded js-tilt"
                 >
-                  <img
-                    alt="Project Image"
-                    class="img-fluid"
-                    src="assets/kerbal_controller/1.jpg"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/kerbal_controller/1.avif">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/kerbal_controller/1.jpg"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -165,6 +351,11 @@
                     You can watch the entire competition on Youtube !
                   </p>
                 </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Python</span>
+                  <span class="badge bg-custom">AI/ML</span>
+                  <span class="badge bg-custom">RaspBerry Pi</span>
+                </h2>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -184,11 +375,14 @@
                   data-tilt-max-glare="0.5"
                   class="thumbnail rounded js-tilt"
                 >
-                  <img
-                    alt="Project Image"
-                    class="img-fluid"
-                    src="assets/sigma_ia_racing/1.jpg"
-                  />
+                  <picture>
+                    <source type="image/avif" srcset="assets/sigma_ia_racing/1.avif">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/sigma_ia_racing/1.jpg"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -208,6 +402,11 @@
                     You can watch the project presentation on Youtube !
                   </p>
                 </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Python</span>
+                  <span class="badge bg-custom">RaspBerry Pi</span>
+                  <span class="badge bg-custom">Electronics</span>
+                </h2>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -228,11 +427,14 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/sand_table/1.jpg"
-                    />
+                    <picture>
+                      <source type="image/avif" srcset="assets/sand_table/1.avif">
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/sand_table/1.jpg"
+                      />
+                    </picture>
                   </div>
                 </a>
               </div>
@@ -255,6 +457,12 @@
                     You can watch the project presentation on Youtube !
                   </p>
                 </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">C</span>
+                  <span class="badge bg-custom">STM32</span>
+                  <span class="badge bg-custom">Bluetooth</span>
+                  <span class="badge bg-custom">Hacking</span>
+                </h2>
                 <a
                   rel="noreferrer"
                   target="_blank"
@@ -274,29 +482,45 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/keylogger_hardware/1.jpg"
-                    />
+                    <picture>
+                      <source type="image/avif" srcset="assets/keylogger_hardware/1.avif">
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="assets/keylogger_hardware/1.jpg"
+                      />
+                    </picture>
                   </div>
               </div>
             </div>
           </div>
           <!-- /END Project -->
 
-          <!-- TAF -->
+          <!-- AI 2D Car Simulator -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Website Angular/Spring</h3>
+                <h3 class="project-wrapper__text-title">AI 2D Car Simulator <br>(In Progress)</h3>
                 <div>
                   <p class="mb-4">
-                    My first Web Application project. With 7 other students, we had to develop a web application for our school to help future students to organize their projects.<br>
-                    This work was very interesting because we had to work with a lot of different technologies like Angular, Spring, Hibernate, MySQL, Docker, SonarQube, etc.<br>
-                    But it was also very challenging because we had to work in a team of 8 people and this enabled us to learn how to use the agile scrum method.<br>
+                    A small POC to learn how to use AI/ML in a pygame environment. The goal is to train a car to drive on a track.
+                    We have started from a project of the youtube channel NeuralNine, then after changing from the NEAT library to the stable-baselines framework, 
+                    we have rework the entire project so that the learning use the entire CPU power. (multi-processing)
                   </p>
                 </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Python</span>
+                  <span class="badge bg-custom">AI/ML</span>
+                  <span class="badge bg-custom">MultiProcessing</span>
+                </h2>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Clement-Cardot/ai-car-simulation-project"
+                >
+                  Source Code
+                </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
@@ -308,11 +532,118 @@
                     data-tilt-max-glare="0.5"
                     class="thumbnail rounded js-tilt"
                   >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/taf/1.png"
-                    />
+                    <picture>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="https://placehold.co/800x400?text=COMING+SOON"
+                      />
+                    </picture>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Snake AI -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Snake AI <br>(In Progress)</h3>
+                <div>
+                  <p class="mb-4">
+                    Same project as above but this time with the famous game Snake (home made). 
+                    This time the multiprocessing implementation was easier because each snake have it own environnement.
+                  </p>
+                </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Python</span>
+                  <span class="badge bg-custom">AI/ML</span>
+                  <span class="badge bg-custom">MultiProcessing</span>
+                </h2>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/Clement-Cardot/Snake-AI"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <picture>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="https://placehold.co/800x400?text=COMING+SOON"
+                      />
+                    </picture>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Web Space Sim -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Web Space Simulation <br>(COMING SOON)</h3>
+                <div>
+                  <p class="mb-4">
+                    The goal is to create a web application that allows the user to simulate the solar system.
+                    I will use the RogueEngine framework to create the simulation. The first step will be to create a simple 2D simulation, then a 3D simulation.
+                    If the project goes well, I will try to add rockets so that the player can travel in the solar system.
+                  </p>
+                </div>
+                <h2 class="mb-4">
+                  <span class="badge bg-custom">Space Simulation</span>
+                  <span class="badge bg-custom">Rogue Engine</span>
+                  <span class="badge bg-custom">TypeScript</span>
+                </h2>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <picture>
+                      <img
+                        alt="Project Image"
+                        class="img-fluid"
+                        src="https://placehold.co/800x400?text=COMING+SOON"
+                      />
+                    </picture>
                   </div>
               </div>
             </div>
@@ -345,15 +676,15 @@
     <!-- **** Footer Section **** -->
     <footer class="footer navbar-static-bottom">
       <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
+        <a rel="noreferrer" href="#top" class="back-to-top" aria-label="top-of-the-page">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://www.linkedin.com/in/clément-cardot" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/clément-cardot" target="_blank" aria-label="linkedin">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="https://github.com/Clement-Cardot" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
+          <a rel="noreferrer" href="https://github.com/Clement-Cardot" target="_blank" aria-label="github">
+            <i class="fa fa-github fa-inverse" ></i>
           </a>
         </div>
 
@@ -366,7 +697,7 @@
             >Jacobo Martínez</a
           >
           <br>
-          Big thanks to him because I hate front-end development ❤️
+          Big thanks to him because I hate UI/UX design ❤️
         </p>
         
       </div>
